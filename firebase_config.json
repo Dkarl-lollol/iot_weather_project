@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "weathering-app-iot",
+  "private_key_id": "64cb96062458700f52d82402cc2931dc84912f20",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDCgJHCNYrnzJhh\nMYPagSoZU1P/N45dLTsCh+CcluHD0Zu84GX3vaQkcGH386ZVYcCjPpM0/vcfR64h\n7uw6lI60dbeECejtZzbPwwt8qlkq6i+6joMdGPWaH8lFlxOMumHzHluay+n0d8fY\n9WavTmMGDrb+X/M8f4OFwHAnO4p7rMs5ejnpTQXw2/CyYLHZFtuK9UmTqIHmZiCK\nezM9VJBRVm3AcDgCOz7Qhq3Rugec3bjdUu5D9CJown9fvx3GF4GQyGKUhLbTsDdd\nOmh2N1G3s3qJAdGM56Cj1rsrajaL4XQ1bdxiZZEFiYR/iMUZCyKJod6h1Lp0eadd\nK8UrEpShAgMBAAECggEABmEcJsAF0ct6lfl/Rxvkaxc6Eo1abIDuxgr52XjzZ65I\nyt2bSpBcQVu0QuMpafR+UnxbbKoOJeb+dZt2AQfdVFrmDX0buCmh+Rd/GXQm34r1\nzMsezsYCTC9NtSwa1otIaiZtP7r/bea91cZau1Y5VjoGU3qHKk1OXYUtyIOh66N1\nB6Cn1w9lPFagZSbZvmC+arCwR+FcGZBRh7FbwcKBoz45w0IFmCUfhRKbmSsDK2s4\nAiqvcEp9mLQLhaGWoCRWdepQ+fQb++EhrMDB8123rB5IETqyGNnYa41ila6pCa4I\nraE3pYp1VD7WgAKHhqO9p63NAV2D2xv3HbpXzB14LwKBgQDzVFqguAQ0Ed+kkpj/\n3CiA9k7pDVSxyUZFF/H2MrlkgCSnURUodK1a/LkJYLf18RdbZFzJxcGRYZMora4z\nG5wy704SzdZq1ZNFzVsIj91bsIh+FOMFBQQ6bg7kyS56s9t0i0ig0Y7UkZWG7Kr/\nORBu22+ZEb1sgp9fGCobcpLRkwKBgQDMoVW7aEeIt6PmM/9ThDovDvNRRaQHBtzp\nzBxUbhSprGjbZenB0m0eVycQbhO2/IlG240WBoNT96918AsM4Qhdqp2EkE16Yecq\nJaVKVBRnTyr2y5DqPXWPIdrgcH7wJYwejQnd7KaEZLBQXVQXjj8l2E12q7geh3Xb\nNntCK6JxewKBgQCOhoNLDl4P7cQ0TlXl0Bu9ZghUg6VvOXi6ccsdLRrgXhqaEmk1\nOBpuaAcuEgPOv/exZXjgCsBVmnSq6AhYET0NrJPrebu0+gJ4aU+AFVxQH3fjefJ7\ndzPB0cNRiPF7l6vceNUCtZxWsCuIS0nhkpgohsm4O+bbDyuwdKP9Tb/nlwKBgQC4\nLcJHcr1n/boEmeqG1i20a2VvUhonxPKTcIZTK91nNmoOhzUVofta4qCjdiBChBxe\n7X+YQnZz3ixMH6kih20LOWSbi3Jg47u3wLh8JR9UOPp3tZOScYzdLmCdwENQjMsI\nOHOYDsd1xFa5jrcAmKSXwI9Ab6DBwbS/gNMCJNoJ/wKBgC9fSE4aPqqDy95GBpkK\ne6j9Dj9V50nahfiG/1IZDSi1ru9oHsM3gZnX3wpJ73O4blI4c1leUTFRSD5Prsrz\nZ1sbskj9Q6hY34wVVs7lyMxXuZ71D+vYGClMLuGHPdHXldJxwN5y9HsK7nBPzjYC\nGP3LGquIs/3NQvtySxpd9znS\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@weathering-app-iot.iam.gserviceaccount.com",
+  "client_id": "112119784738293290205",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40weathering-app-iot.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
