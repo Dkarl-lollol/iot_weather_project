@@ -104,7 +104,7 @@ def safe_fetch():
             job_lock.release()
 
 def run_scheduler():
-    schedule.every(1).minute.do(safe_fetch)
+    schedule.every(1).hour.do(safe_fetch)
     while True:
         schedule.run_pending()
         time.sleep(1)
