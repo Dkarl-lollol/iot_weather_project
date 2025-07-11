@@ -4,6 +4,7 @@ from datetime import datetime
 import schedule
 import time
 import threading
+from threading import Lock
 import firebase_admin
 from firebase_admin import credentials, db
 
@@ -43,12 +44,12 @@ def fetch_and_store():
     forecast_json = forecast_res.json()
     current_json = current_res.json()
 
-    # Timestamp untuk storage — ikut waktu sebenar (bukan round ke jam)
-    now = datetime.now()
+    # Align to start of the current minute
+    now = datetime.now().replace(second=0, microsecond=0)
     timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
 
     # Cari hour_str untuk padan dengan forecast API
-    hour_str = now.replace(minute=0, second=0, microsecond=0).strftime("%Y-%m-%dT%H:00")
+    hour_str = now.strftime("%Y-%m-%dT%H:00")
 
     try:
         forecast_times = forecast_json['hourly']['time']
@@ -69,7 +70,8 @@ def fetch_and_store():
 
         # === Save to Firebase ===
         ref = db.reference("weather")
-        ref.push({
+        unique_key = timestamp.replace(":", "-").replace(" ", "_")  # Firebase-safe key
+        ref.child(unique_key).set({
             'timestamp': timestamp,
             'temp_forecast': temp_forecast,
             'temp_actual': temp_actual,
@@ -91,8 +93,18 @@ def fetch_and_store():
 def ping():
     return "Firebase Weather Logger is running!"
 
+
+job_lock = Lock()
+
+def safe_fetch():
+    if job_lock.acquire(blocking=False):
+        try:
+            fetch_and_store()
+        finally:
+            job_lock.release()
+
 def run_scheduler():
-    schedule.every(1).minutes.do(fetch_and_store)
+    schedule.every(1).minute.do(safe_fetch)
     while True:
         schedule.run_pending()
         time.sleep(1)
