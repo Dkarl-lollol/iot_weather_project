@@ -34,7 +34,7 @@ else:
     df = pd.DataFrame()
 
 # === UI ===
-st.title("🌤️ IoT Weather Dashboard (Firebase)")
+st.title("🌤️ IoT Weather Dashboard (FireBase)")
 st.write("Forecast vs Actual Comparison & MSE")
 
 if df.empty:

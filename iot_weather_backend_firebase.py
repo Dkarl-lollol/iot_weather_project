@@ -34,11 +34,11 @@ def fetch_and_store():
     print("[DEBUG] Current status:", current_res.status_code)
 
     if forecast_res.status_code != 200:
-        print("[ERROR] Forecast API failed!")
+        print("[ERROR] Forecast API failed")
         return
 
     if current_res.status_code != 200:
-        print("[ERROR] Current API failed!")
+        print("[ERROR] Current API failed")
         return
 
     forecast_json = forecast_res.json()
