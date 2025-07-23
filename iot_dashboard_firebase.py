@@ -7,8 +7,7 @@ import json
 
 # === FIREBASE SETUP ===
 if not firebase_admin._apps:
-    firebase_json = json.loads(st.secrets["firebase_config"])
-    cred = credentials.Certificate(firebase_json)
+    cred = credentials.Certificate("firebase_config.json")
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://weathering-app-iot-default-rtdb.firebaseio.com/'
     })
