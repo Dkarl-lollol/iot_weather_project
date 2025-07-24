@@ -3,13 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import firebase_admin
 from firebase_admin import credentials, db
-import json
 
 # === FIREBASE SETUP ===
 if not firebase_admin._apps:
     cred = credentials.Certificate("firebase_config.json")
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://weathering-app-iot-default-rtdb.firebaseio.com/'
+        
     })
 
 # === Fetch data from Firebase ===
